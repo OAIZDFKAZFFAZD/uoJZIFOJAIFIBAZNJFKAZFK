@@ -14,18 +14,18 @@ function getRandomIntInclusive(min, max) {
 
 mytimer = setInterval(async () => {
   var channel = client.channels.cache.get('851790745815220234');
-  console.log('yes')
+  console.log('Bumped Here! #-#-#')
   channel.sendSlash('302050872383242240', 'bump')
 }, getRandomIntInclusive(7200000, 9600000))
 // 7200000, 9600000
 
 client.on('message', message => {
   if (message.channel.id === '851790745815220234' && message.type === 'APPLICATION_COMMAND' && message.author.id === '302050872383242240' && message.interaction.commandName === 'bump') {
-    console.log('yes i detected it!')
+    console.log('Detected Bump! Resetting...')
     clearInterval(mytimer)
     mytimer = setInterval(async () => {
       var channel = client.channels.cache.get('851790745815220234');
-      console.log('yes')
+      console.log('Bumped Here! #+#+#')
       channel.sendSlash('302050872383242240', 'bump')
     }, getRandomIntInclusive(7200000, 9600000))
   }
