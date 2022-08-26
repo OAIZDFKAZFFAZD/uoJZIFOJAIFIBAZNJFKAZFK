@@ -20,7 +20,7 @@ mytimer = setInterval(async () => {
 // 7200000, 9600000
 
 client.on('message', message => {
-  if (message.channel.id === '851790745815220234' && message.type === 'APPLICATION_COMMAND' && message.author.id === '302050872383242240' && message.interaction.commandName === 'bump') {
+  if (message.channel.id === '851790745815220234' && message.type === 'APPLICATION_COMMAND' && message.author.id === '302050872383242240' && message.interaction.commandName === 'bump' && message.interaction.user.id != '848923455922896947') {
     console.log('Detected Bump! Resetting...')
     clearInterval(mytimer)
     mytimer = setInterval(async () => {
