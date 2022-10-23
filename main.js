@@ -36,4 +36,4 @@ client.on('message', message => {
   }
 })
 
-client.login('ODQ4OTIzNDU1OTIyODk2OTQ3.Gi7rCo.MU1V7BQvrPcHEkcOmZCQoCYm29QeZOpme_28Gw');
+client.login('TOEKN');
