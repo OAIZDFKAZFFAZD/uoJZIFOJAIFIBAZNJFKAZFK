@@ -1,5 +1,6 @@
 const { Client } = require('discord.js-selfbot-v13');
 const { Constants: { APIErrors }} = require('discord.js');
+require('dotenv').config()
 const Cooldown = new Set();
 
 const client = new Client({
