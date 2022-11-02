@@ -21,7 +21,7 @@ mytimer = setInterval(async () => {
 // 7200000, 9600000
 
 client.on('ready',  async() => {
-    console.log('I am online and ready to listen to commands!')
+    console.log('First bump takes 2 to 3 hours to come in.')
     client.user.setStatus('invisible')
 })
 
