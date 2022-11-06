@@ -14,7 +14,7 @@ function getRandomIntInclusive(min, max) {
 }
 
 mytimer = setInterval(async () => {
-  var channel = client.channels.cache.get('851790745815220234');
+  var channel = client.channels.cache.get(process.env.CHANNELID);
   console.log('Bumped Here! #-#-#')
   channel.sendSlash('302050872383242240', 'bump')
 }, getRandomIntInclusive(7200000, 9600000))
@@ -30,7 +30,7 @@ client.on('message', message => {
     console.log('Detected Bump! Resetting...')
     clearInterval(mytimer)
     mytimer = setInterval(async () => {
-      var channel = client.channels.cache.get('851790745815220234');
+      var channel = client.channels.cache.get(process.env.CHANNELID);
       console.log('Bumped Here! #+#+#')
       channel.sendSlash('302050872383242240', 'bump')
     }, getRandomIntInclusive(7200000, 9600000))
